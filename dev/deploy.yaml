@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yarp-deployment
+  labels:
+    app: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yarp-webapp
+  template:
+    metadata:
+      labels:
+        app: yarp-webapp
+    spec:
+      containers:
+        - name: webapp
+          image: tom30913/yaplab:latest
+          ports:
+            - containerPort: 80
