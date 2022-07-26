@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alphal
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-application
