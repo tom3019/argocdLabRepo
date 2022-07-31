@@ -4,6 +4,7 @@ metadata:
   name: yarp-deployment
   labels:
     app: yarp-webapp
+    istio-injection: enabled
   namespace: yarp-lab
 spec:
   replicas: 2
